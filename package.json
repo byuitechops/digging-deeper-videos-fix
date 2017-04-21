@@ -1,0 +1,23 @@
+{
+    "name": "digging-deeper-videos-fix",
+    "version": "1.0.0",
+    "description": "fixes problems we had in the digging deeper video files",
+    "main": "file-organizer.js",
+    "dependencies": {
+        "d3-dsv": "^1.0.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/byuitechops/digging-deeper-videos-fix.git"
+    },
+    "author": "Scott Nicholes",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/byuitechops/digging-deeper-videos-fix/issues"
+    },
+    "homepage": "https://github.com/byuitechops/digging-deeper-videos-fix#readme"
+}
