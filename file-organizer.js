@@ -1,5 +1,6 @@
 var fs = require('fs'); // For filestream node
 var path = require('path'); // For path node
+//var d3 = require('d3-dsv');
 
 // Get path-name
 var pathname = process.argv[2];
@@ -149,3 +150,7 @@ for (var i = 0; i < speakerFilenames.length; i++) {
   console.log(speakerFilenames[i]);
 }
 */
+
+/*d3.csvFormat(filesOut);
+d3.csvFormat(titlesOut);
+d3.csvFormat(speakersOut);*/
