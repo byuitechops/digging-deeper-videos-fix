@@ -4,7 +4,7 @@
 
 var fs = require('fs'); // For filestream node
 var path = require('path'); // For path node
-var dsv = require('d3-dsv'); // For path node
+var dsv = require('d3-dsv'); // For d3-dsv csv conversion node
 
 // Get path-name
 var pathname = process.argv[2] || __dirname;
@@ -188,6 +188,9 @@ var fileNameErrors = Object.keys(filesOut).map(function (key) {
 //var csvOut = dsv.csvFormat(fileNameErrors, ["fileName", "title", "speaker", "imageURL", "frameURL"]);
 var csvOut = dsv.csvFormat(fileNameErrors, ["fileName", "title", "speaker", "imageURL", "frameURL", "ENTRY_ID", "PLAY_FROM", "PLAY_TO"]);
 
-fs.writeFileSync('fileNameErrors.csv', csvOut)
+// To see what our csv file looks like
+//console.log(csvOut);
+
+fs.writeFileSync('fileNameErrors.csv', csvOut);
 
 //console.log("fileNameErrors:\n" + csvOut);
