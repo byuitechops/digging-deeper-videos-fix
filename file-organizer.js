@@ -182,7 +182,11 @@ var fileNameErrors = Object.keys(filesOut).map(function (key) {
     return item.frameURL.match(/youtu\.?be/) === null;
 });
 
-var csvOut = dsv.csvFormat(fileNameErrors, ["fileName", "title", "speaker", "imageURL", "frameURL"]);
+// To see what our file looks like
+//console.log(fileNameErrors[0].fileName);
+
+//var csvOut = dsv.csvFormat(fileNameErrors, ["fileName", "title", "speaker", "imageURL", "frameURL"]);
+var csvOut = dsv.csvFormat(fileNameErrors, ["fileName", "title", "speaker", "imageURL", "frameURL", "ENTRY_ID", "PLAY_FROM", "PLAY_TO"]);
 
 fs.writeFileSync('fileNameErrors.csv', csvOut)
 
