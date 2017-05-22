@@ -15,6 +15,7 @@
         "url": "git+https://github.com/byuitechops/digging-deeper-videos-fix.git"
     },
     "author": "Scott Nicholes",
+    "contributors": "Joshua McKinney",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/byuitechops/digging-deeper-videos-fix/issues"
